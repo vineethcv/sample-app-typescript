@@ -4,5 +4,5 @@ module.exports = {
   transform: { '^.+\\.(t|j)sx?$': ['ts-jest', {}] },
   moduleFileExtensions: ['ts', 'js'],
   rootDir: '.',
-  testMatch: ['**/*.spec.ts']
+  testMatch: ['<rootDir>/tests/**/*.spec.ts']
 }

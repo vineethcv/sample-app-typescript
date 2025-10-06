@@ -3,7 +3,9 @@
   "compilerOptions": {
     "outDir": "dist",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "module": "CommonJS",
+    "moduleResolution": "node"
   },
   "include": [
     "src"

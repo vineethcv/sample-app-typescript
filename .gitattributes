@@ -1,0 +1,71 @@
+# ------------------------------------------------------------
+# Default: enforce LF line endings and auto text normalization
+# ------------------------------------------------------------
+* text=auto eol=lf
+
+# ------------------------------------------------------------
+# Source code files (force LF)
+# ------------------------------------------------------------
+*.js     text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.jsx    text eol=lf
+*.json   text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.md     text eol=lf
+*.html   text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+*.sh     text eol=lf
+*.env    text eol=lf
+*.Dockerfile text eol=lf
+Dockerfile  text eol=lf
+
+# ------------------------------------------------------------
+# Configuration & workflow files
+# ------------------------------------------------------------
+*.gitignore     text eol=lf
+*.gitattributes text eol=lf
+*.editorconfig  text eol=lf
+*.prettierrc    text eol=lf
+*.eslintrc*     text eol=lf
+*.babelrc*      text eol=lf
+*.nvmrc         text eol=lf
+*.npmrc         text eol=lf
+*.yarnrc        text eol=lf
+*.dockerignore  text eol=lf
+
+# ------------------------------------------------------------
+# Binary / compressed files (never modify line endings)
+# ------------------------------------------------------------
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.svg     binary
+*.pdf     binary
+*.zip     binary
+*.7z      binary
+*.tar.gz  binary
+*.tgz     binary
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.mp4     binary
+*.mov     binary
+
+# ------------------------------------------------------------
+# Test reports, traces, and Playwright recordings
+# ------------------------------------------------------------
+*.trace   binary
+*.zip     binary
+*.mp4     binary
+
+# ------------------------------------------------------------
+# Lockfiles and package manifests (keep LF for CI consistency)
+# ------------------------------------------------------------
+package-lock.json text eol=lf
+pnpm-lock.yaml    text eol=lf
+yarn.lock         text eol=lf
