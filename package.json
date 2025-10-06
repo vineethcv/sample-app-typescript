@@ -1,6 +1,7 @@
 {
   "name": "sample-app-typescript",
   "private": true,
+  "packageManager": "npm@11.6.1",
   "workspaces": [
     "apps/*",
     "tests/*"

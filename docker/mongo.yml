@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:7
+    container_name: sampleapp_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: app
+      MONGO_INITDB_ROOT_PASSWORD: app
+    ports: ["27017:27017"]
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--username", "app", "--password", "app", "--eval", "db.runCommand({ ping: 1 })"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  mongo_data:
