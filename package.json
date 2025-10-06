@@ -1,4 +1,16 @@
 {
   "name": "sample-app-typescript",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test --continue",
+    "lint": "turbo run lint --continue"
+  },
+  "devDependencies": {
+    "turbo": "2.1.1",
+    "typescript": "^5.5.4"
+  }
 }
